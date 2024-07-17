@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { LoginComponent } from './componentes/login/login.component';
 import { AgendaComponent } from './componentes/agenda/agenda.component';
 import { PetcareComponent } from './componentes/petcare/petcare.component';
+import { CadastroComponent } from './componentes/cadastro/cadastro.component';
 
 export const routes: Routes = [
 
@@ -20,4 +21,8 @@ export const routes: Routes = [
         path: 'agenda',
         component:AgendaComponent
     },
+    {
+        path: 'cadastro',
+        component:CadastroComponent
+    }
 ];
