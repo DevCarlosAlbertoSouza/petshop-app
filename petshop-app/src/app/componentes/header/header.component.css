@@ -1,0 +1,75 @@
+/* Cabeçalho */
+.header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: linear-gradient(90deg, #a7cee4, #6db6e0,#39a9eb); */
+    background: #39a9eb;
+    flex-wrap: wrap;
+    padding: 12px;
+    color: #fff;
+    font-family: 'Playwrite NG Modern', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.logo img {
+    clip-path: circle(110px);
+}
+
+.logout-button {
+    background: #0371AC;
+    color: white;
+    height: 60px;
+    width: 120px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Playwrite NG Modern', sans-serif;
+    font-size: 1rem;
+}
+
+.logout-button:hover {
+    background-color: #FF0094;
+}
+
+.menu-navigation {
+    margin: 20px 76px 20px 76px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.nav-button {
+    background-color: #39A9EB;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Playwrite NG Modern', sans-serif;
+    font-size: 1rem;
+    width: 130px;
+    height: 130px;
+    color: #fff;
+}
+
+.nav-button:hover {
+    background-color: #0371AC;
+    color: #fff;
+}
+
+.divisor-line {
+    height: 2.5px;
+    background-color: #0371AC;
+}
