@@ -1,0 +1,218 @@
+.dadosPessoaisCliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__dadosPessoais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    background: #b4b4b4;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.title {
+    font-size: 28px;
+    color: #0371ac;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.title::before,
+.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #0371ac;
+}
+
+.title::before {
+    width: 18px;
+    height: 18px;
+    background-color: #0371ac;
+}
+
+.title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+}
+
+.message {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+}
+
+
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+
+.form label {
+    position: relative;
+}
+
+.form label .input {
+    width: 87%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1.5px solid #FF0094;
+    border-radius: 10px;
+}
+
+.form label .input+span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown+span {
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus+span,
+.form label .input:valid+span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label .input:valid+span {
+    color: green;
+}
+
+.flex2 {
+    display: flex;
+    gap: 6px;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.submit__avancar {
+    border: none;
+    outline: none;
+    background-color: #FF0094;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    width: 40%;
+    cursor: pointer;
+}
+
+.submit__cancelar {
+    border: none;
+    outline: none;
+    background-color: #6e0040;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    width: 25%;
+    cursor: pointer;
+}
+
+.submit__avancar:hover {
+    background-color: #0371AC;
+    color: #000;
+    transform: .3s ease;
+}
+
+.submit__cancelar:hover {
+    background-color: #0371AC;
+    color: #000;
+    transform: .3s ease;
+}
+
+.dadosResidenciasCliente {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__dadosResidencais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    background: #b4b4b4;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.flex-residenciais {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form label .input-rua-bairro {
+    width: 90%;
+}
+
+.form label .input-complementos {
+    width: 84%;
+}
+
+.concluirCadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marca__opcionais {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.opcionais {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #605e5e;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    to {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
