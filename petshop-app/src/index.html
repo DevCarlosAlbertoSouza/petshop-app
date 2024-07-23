@@ -1,15 +1,34 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
   <meta charset="utf-8">
   <title>PetshopApp</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+
+  <!-- Incluindo jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Incluindo Flickity -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 </head>
+
 <body>
   <app-root></app-root>
+
+  <script>
+    $(document).ready(function () {
+      $('.main-gallery').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+      });
+    });
+  </script>
 </body>
+
 </html>

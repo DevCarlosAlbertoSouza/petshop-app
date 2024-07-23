@@ -1,31 +1,42 @@
-
 <div class="header">
-    <div class="logo">
-      <img ngSrc="logo.png" alt="Petcare Logo" width="250" height="250" priority>
-    </div>
-    <nav class="navigation">
-      <button class="nav-button">Home</button>
-      <button routerLink="/agenda" class="nav-button">Agenda Banho e Tosa</button>
-
-    </nav>
-    <button class="logout-button">Sair</button>
+  <div class="logo">
+    <img ngSrc="logoPug.png" alt="Petcare Logo" width="250" height="250" priority>
   </div>
-  
-  <div class="main-content">
-    <div class="activity-section">
-      <h2>Próximas atividades</h2>
-      <div class="activity-card">
-        <p>Banho e tosa - 10/07 - 17:30</p>
-        <p>Fulano S. - Cão/Dino</p>
-      </div>
-      <div class="activity-card">
-        <p>Banho e tosa - 10/07 - 18:00</p>
-        <p>Beltrano T. - Cão/Scooby</p>
-      </div>
-      <div class="activity-card">
-        <p>Banho - 11/07 - 08:00</p>
-        <p>Ciclana A. - Gato/Milk</p>
+  <div class="navigation">
+    <button class="logout-button" routerLink="/#">
+      <img ngSrc="icone-ajuda.png" alt="icone de login" width="30" height="30">
+    </button>
+    <button class="logout-button" routerLink="/#">
+      <img ngSrc="icone-favoritos.png" alt="icone de login" width="30" height="30">
+    </button>
+    <div class="login">
+      <button class="logout-button" routerLink="/login">
+        <img ngSrc="icone-login.png" alt="icone de login" width="30" height="30">
+      </button>
+      <div class="login-span">
+        <span class="login__entrar" routerLink="/login">Entrar</span>
+        <span class="login__cadastro">Cadastre-se</span>
       </div>
     </div>
+    
   </div>
-  
+</div>
+<!-- "autoPlay": true rolagem auto-->
+<div class="gallery js-flickity"
+  data-flickity-options='{ "autoPlay": true, "pauseAutoPlayOnHover": false, "wrapAround": true, "pageDots": false}'>
+  <div class="gallery-cell">
+    <img ngSrc="caes-e-gatos.jpg" alt="Imagem de cães e gatos" width="1000" height="300">
+  </div>
+  <div class="gallery-cell">
+    <img ngSrc="gatos.jpg" alt="Imagem de gatos" width="1000" height="300">
+  </div>
+  <div class="gallery-cell">
+    <img ngSrc="pets.jpg" alt="Imagem de cães e gatos" width="1000" height="300">
+  </div>
+  <div class="gallery-cell">
+    <img ngSrc="racao.jpg" alt="Imagem de cães e gatos" width="1000" height="300">
+  </div>
+  <div class="gallery-cell">
+    <img ngSrc="pets.jpg" alt="Imagem de cães e gatos" width="1000" height="300">
+  </div>
+</div>

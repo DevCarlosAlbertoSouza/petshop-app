@@ -1,7 +1,7 @@
 /* Cabeçalho */
 .header {
     height: 100px;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     /* background: linear-gradient(90deg, #a7cee4, #6db6e0,#39a9eb); */
@@ -46,7 +46,7 @@ img {
 }
 
 .navigation {
-    display: flex;
+    display: none;
     flex-direction: row;
     gap: 35px;
 }

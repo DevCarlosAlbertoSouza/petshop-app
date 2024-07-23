@@ -1,13 +1,13 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { LoginComponent } from '../login/login.component';
+import { HeaderLoginComponent } from '../login/header.component';
 import { AgendaComponent } from '../agenda/agenda.component';
 
 @Component({
   selector: 'app-petcare',
   standalone: true,
-  imports: [NgOptimizedImage,RouterLink],
+  imports: [NgOptimizedImage,RouterLink, HeaderLoginComponent],
   templateUrl: './petcare.component.html',
   styleUrl: './petcare.component.css'
 })
